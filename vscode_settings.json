@@ -1,0 +1,57 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": false,
+  "python.linting.pylintEnabled": false,
+  "explorer.enableDragAndDrop": true,
+  "files.autoSaveDelay": 3500,
+  "editor.formatOnSave": true,
+  // "editor.autoIndent": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "solid",
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelZoom": true,
+  "editor.fontLigatures": true,
+  "python.pythonPath": "/usr/local/bin/python3",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.wordWrap": "on",
+  "editor.formatOnSaveTimeout": 500,
+  "editor.renderControlCharacters": false,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.lineHeight": 1.2,
+  "git.autofetch": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrapColumn": 100,
+  "workbench.tree.indent": 6,
+  "breadcrumbs.enabled": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "short",
+  "window.zoomLevel": 0,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "debug.console.fontFamily": "JetBrains Mono",
+  "workbench.colorTheme": "Dark Purple - Webstorm",
+  "debug.console.fontSize": 13,
+  "editor.renameOnType": true,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontWeightBold": "normal",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 13,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "files.autoSave": "onFocusChange"
+}

@@ -6,7 +6,7 @@ shopt -s autocd
 shopt -s histappend
 
 export PATH=$PATH:$HOME/bin
-
+export LANG=en_US # Github Show English Lang
 export HISTSIZE=5000
 export HISTFILESIZE=10000
 
@@ -17,12 +17,12 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 txtred='\e[0;31m' # Red
+txtcyn='\e[0;36m' # Cyan
 txtgrn='\e[0;32m' # Green
 bldgrn='\e[1;32m' # Bold Green
 bldpur='\e[1;35m' # Bold Purple
 txtrst='\e[0m'    # Text Reset
-
-emojis=("👾" "🌎" "🌹" "🥳" "🐉" "🌵")
+emojis=("👾" "🚀" "👊" "🤙" "🧙🏻‍♂️" "👑" "🐲")
 
 EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
 
@@ -30,14 +30,14 @@ print_before_the_prompt () {
     dir=$PWD
     home=$HOME
     dir=${dir/"$HOME"/"~"}
-    printf "\n $txtred%s: $bldpur%s $txtgrn%s\n$txtrst" "$HOST_NAME" "$dir" "$(vcprompt)"
+    printf "\n $txtcyn%s: $bldpur%s $txtgrn%s\n$txtrst" "$HOST_NAME" "$dir" "$(vcprompt)"
 }
 
 PROMPT_COMMAND=print_before_the_prompt
 PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 PS1="$EMOJI >"
 
-fortune | cowsay -f tux
+#fortune | cowsay -f tux
 
 function mkcd()
 {
@@ -75,3 +75,14 @@ alias gp='git pull'
 alias gpsh='git push'
 alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+
+
+source ~/.profile
+nvm use stable
+source ~/.bashrc
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

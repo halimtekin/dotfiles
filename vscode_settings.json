@@ -7,7 +7,7 @@
   "explorer.enableDragAndDrop": true,
   "files.autoSaveDelay": 3500,
   "editor.formatOnSave": true,
-  // "editor.autoIndent": true,
+  "editor.autoIndent": true,
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 3,
   "editor.cursorBlinking": "solid",

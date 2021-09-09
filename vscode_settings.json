@@ -16,7 +16,7 @@
   "editor.fontLigatures": true,
   "python.pythonPath": "/usr/local/bin/python3",
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.shell.osx": "zsh",
   "editor.wordWrap": "on",
   "editor.formatOnSaveTimeout": 500,
   "editor.renderControlCharacters": false,
@@ -36,22 +36,28 @@
   },
   "editor.wordWrapColumn": 100,
   "workbench.tree.indent": 6,
-  "breadcrumbs.enabled": false,
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.labelFormat": "short",
-  "window.zoomLevel": 0,
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "debug.console.fontFamily": "JetBrains Mono",
-  "workbench.colorTheme": "Dark Purple - Webstorm",
   "debug.console.fontSize": 13,
   "editor.renameOnType": true,
-  "editor.fontSize": 13,
   "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.fontFamily": "JetBrains Mono",
-  "terminal.integrated.fontSize": 13,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "browser-preview.startUrl": "http://localhost:3000/",
+  "terminal.integrated.automationShell.osx": "",
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "workbench.editor.enablePreview": false,
+  "editor.tokenColorCustomizations": {
+    "comments": "#229977" // change to any color you like
+  },
+  "breadcrumbs.enabled": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.lineHeight": 1.5,
+  "terminal.integrated.fontSize": 13
 }
